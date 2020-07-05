@@ -6,4 +6,10 @@ app.get('/',(req, res) => {
 	res.send('Hallo Bunny <3');
 });
 
+app.get('/tea',(req, res) => {
+	res.set('X-energy-type','love');
+	res.status(410);
+	res.send('This tea is full of love');
+});
+
 app.listen(port, ()=> console.log(`I am running on port ${port}!`))
