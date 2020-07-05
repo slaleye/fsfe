@@ -8,7 +8,7 @@ app.get('/',(req, res) => {
 
 app.get('/tea',(req, res) => {
 	res.set('X-energy-type','love');
-	res.status(410);
+	res.status(418);
 	res.send('This tea is full of love');
 });
 
